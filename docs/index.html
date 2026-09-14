@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dakshin J V — Applied AI Engineer</title>
+    <meta
+      name="description"
+      content="Dakshin J V is an applied AI / forward deployed engineer. 4 years shipping ML, NLP, memory, and agent systems into production with customers."
+    />
+    <meta name="author" content="Dakshin J V" />
+    <meta name="theme-color" content="#f3eee4" />
+    <meta property="og:title" content="Dakshin J V — Applied AI Engineer" />
+    <meta
+      property="og:description"
+      content="Forward deployed engineer. I sit with messy production problems and leave working AI systems."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://dakshin-jv.github.io/dakshin/" />
+    <meta property="og:image" content="https://dakshin-jv.github.io/dakshin/assets/banner.svg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://dakshin-jv.github.io/dakshin/" />
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="site-header" id="top">
+      <div class="wrap header-inner">
+        <a class="mark" href="#top" aria-label="Dakshin J V home">
+          <span class="mark-bar" aria-hidden="true"></span>
+          <span>DJV</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <a href="#work">Work</a>
+          <a href="#approach">Approach</a>
+          <a href="#path">Path</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="header-actions">
+          <button class="theme-toggle" type="button" data-theme-toggle aria-label="Switch color theme">
+            Theme
+          </button>
+          <a class="btn btn-small" href="mailto:dakshinjv@icloud.com">Email</a>
+          <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav">
+            Menu
+          </button>
+        </div>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" hidden>
+        <a href="#work">Work</a>
+        <a href="#approach">Approach</a>
+        <a href="#path">Path</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <div class="wrap">
+          <p class="eyebrow">
+            <span>Applied AI Engineer</span>
+            <span class="dot" aria-hidden="true"></span>
+            <span>Forward Deployed</span>
+            <span class="dot" aria-hidden="true"></span>
+            <span>Chennai · Hexaware</span>
+          </p>
+          <h1>
+            I sit with messy production problems and leave <em>working</em> AI systems.
+          </h1>
+          <p class="lede">
+            Dakshin J V. Four years in applied ML, NLP, and agentic delivery.
+            I prototype on the customer’s stack, measure whether it holds, and
+            hand off something operators will actually run.
+          </p>
+          <div class="hero-cta">
+            <a class="btn" href="#work">See selected work</a>
+            <a class="btn btn-ghost" href="https://github.com/dakshin-jv" rel="noopener noreferrer">GitHub</a>
+          </div>
+          <dl class="spec">
+            <div>
+              <dt>Tenure</dt>
+              <dd>4 years AI / ML</dd>
+            </div>
+            <div>
+              <dt>Now</dt>
+              <dd>Sr. AI Engineer, Hexaware</dd>
+            </div>
+            <div>
+              <dt>Mode</dt>
+              <dd>Customer-facing delivery</dd>
+            </div>
+            <div>
+              <dt>Open to</dt>
+              <dd>Applied AI / FDE roles</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="work" class="section">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="kicker">01 — Selected work</p>
+            <h2>Public slices of private delivery.</h2>
+            <p>
+              Most forward-deployed work never hits GitHub. These repos are the
+              parts I can show: memory, migration, agents, and applied search.
+            </p>
+          </header>
+
+          <ol class="work-list">
+            <li class="work-card">
+              <p class="work-index">01</p>
+              <div class="work-body">
+                <p class="work-meta">Agent memory · Python · Qdrant · FastAPI</p>
+                <h3>
+                  <a href="https://github.com/dakshin-jv/Context-as-Service" rel="noopener noreferrer">
+                    memoryServe / Context-as-Service
+                  </a>
+                </h3>
+                <p>
+                  Local-first memory for AI agents. Extract facts, resolve conflicts,
+                  decay stale memory, forget on purpose. Hard isolation by
+                  project → user → session so context cannot leak across tenants.
+                </p>
+                <ul class="chips">
+                  <li>mem0-compatible API</li>
+                  <li>Ollama / Azure OpenAI / Bedrock</li>
+                  <li>SQLite lifecycle</li>
+                </ul>
+              </div>
+            </li>
+            <li class="work-card">
+              <p class="work-index">02</p>
+              <div class="work-body">
+                <p class="work-meta">Forward deployed · RPA · Python · C#</p>
+                <h3>
+                  <a href="https://github.com/dakshin-jv/migration-tool-parser" rel="noopener noreferrer">
+                    UiPath REFramework → Power Automate parser
+                  </a>
+                </h3>
+                <p>
+                  Ingest a <code>.nupkg</code>, score REFramework compliance, and emit a
+                  graph of workflows, exceptions, selectors, and Config keys.
+                  Fourteen stages, a Roslyn sidecar for VB/C#, sixty-four tests.
+                  Built for estates that cannot pause for a rewrite.
+                </p>
+                <ul class="chips">
+                  <li>14-stage pipeline</li>
+                  <li>REF-aware scoring</li>
+                  <li>PAD mapping status</li>
+                </ul>
+              </div>
+            </li>
+            <li class="work-card">
+              <p class="work-index">03</p>
+              <div class="work-body">
+                <p class="work-meta">Fintech · Agentic · FastAPI</p>
+                <h3>
+                  <a href="https://github.com/dakshin-jv/blockchain_trade" rel="noopener noreferrer">
+                    Conversational trade agent
+                  </a>
+                </h3>
+                <p>
+                  Turns a blotter into a trader you can talk to. Behavioral
+                  scoring from real fills, streaming replies in first person,
+                  references to actual trades. The point is explanation, not a
+                  generic market chatbot.
+                </p>
+                <ul class="chips">
+                  <li>Personality from history</li>
+                  <li>Streaming chat</li>
+                  <li>MongoDB</li>
+                </ul>
+              </div>
+            </li>
+            <li class="work-card">
+              <p class="work-index">04</p>
+              <div class="work-body">
+                <p class="work-meta">Agent platform · Skills</p>
+                <h3>
+                  <a href="https://github.com/dakshin-jv/agent-skills-engine" rel="noopener noreferrer">
+                    Agent skills engine
+                  </a>
+                </h3>
+                <p>
+                  Toolkit for authoring reusable skills for coding agents and
+                  custom agentic systems. Skills change behavior; MCP changes
+                  reach. This is how you productize the former.
+                </p>
+                <ul class="chips">
+                  <li>SKILL.md</li>
+                  <li>Progressive disclosure</li>
+                  <li>Tool orchestration</li>
+                </ul>
+              </div>
+            </li>
+            <li class="work-card">
+              <p class="work-index">05</p>
+              <div class="work-body">
+                <p class="work-meta">Product search · Local LLM</p>
+                <h3>
+                  <a href="https://github.com/dakshin-jv/real-estate-UseBlocky" rel="noopener noreferrer">
+                    Natural-language apartment search
+                  </a>
+                </h3>
+                <p>
+                  FastAPI + Ollama over listings. Parse intent, filter, answer.
+                  Thin on purpose: a local model, a structured store, no cloud
+                  round-trip for a housing query.
+                </p>
+                <ul class="chips">
+                  <li>Ollama</li>
+                  <li>Intent → filters</li>
+                  <li>Air-gapped friendly</li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+
+          <p class="archive">
+            Earlier applied DS:
+            <a href="https://github.com/dakshin-jv/LiveOps">LiveOps ride monitoring</a>,
+            <a href="https://github.com/dakshin-jv/Country-GDP">country clustering</a>,
+            <a href="https://github.com/dakshin-jv/DataScience-Projects">master’s project archive</a>.
+          </p>
+        </div>
+      </section>
+
+      <section id="approach" class="section section-ink">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="kicker">02 — How I work</p>
+            <h2>Forward deployed, not slide-decked.</h2>
+          </header>
+          <ol class="loop">
+            <li>
+              <h3>Discover</h3>
+              <p>Sit with the operators. Map the workflow they already run, including the ugly exceptions.</p>
+            </li>
+            <li>
+              <h3>Prototype on their stack</h3>
+              <p>Azure, Bedrock, Ollama, UiPath, PAD — I meet the estate. Greenfield is a last resort.</p>
+            </li>
+            <li>
+              <h3>Evaluate</h3>
+              <p>If it cannot be scored, it cannot be handed off. Tests, evals, and failure modes before polish.</p>
+            </li>
+            <li>
+              <h3>Handoff</h3>
+              <p>Something the team will run on Monday. Docs, guardrails, and a path to own it without me.</p>
+            </li>
+          </ol>
+          <div class="stack">
+            <div>
+              <h3>Languages</h3>
+              <p>Python, TypeScript, SQL, C#</p>
+            </div>
+            <div>
+              <h3>Models &amp; agents</h3>
+              <p>Azure OpenAI, AWS Bedrock, Ollama, RAG, skills / harnesses</p>
+            </div>
+            <div>
+              <h3>Services</h3>
+              <p>FastAPI, Qdrant, SQLite, MongoDB, React</p>
+            </div>
+            <div>
+              <h3>Applied ML</h3>
+              <p>pandas, scikit-learn, PyTorch, NLP</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="path" class="section">
+        <div class="wrap split">
+          <header class="section-head">
+            <p class="kicker">03 — Path</p>
+            <h2>Four years, customer-shaped problems.</h2>
+            <p>
+              Wealth, crypto, publishing NLP, now enterprise agentic delivery.
+              The through-line is the same: data in the wild, a decision that
+              has to be made, a system that has to keep working.
+            </p>
+          </header>
+          <ol class="timeline">
+            <li>
+              <p class="when">2025 — now</p>
+              <h3>Sr. AI Engineer · Hexaware Technologies</h3>
+              <p>Agentic systems, Microsoft AI Foundry, customer-facing applied AI in production estates.</p>
+            </li>
+            <li>
+              <p class="when">Prior</p>
+              <h3>Data Scientist · Centricity WealthTech</h3>
+              <p>Machine learning for private wealth and investment workflows.</p>
+            </li>
+            <li>
+              <p class="when">Prior</p>
+              <h3>On-chain Data Scientist · Roni Analytics</h3>
+              <p>Market structure and trader-facing analytics in crypto.</p>
+            </li>
+            <li>
+              <p class="when">Prior</p>
+              <h3>Data Scientist, NLP · Packt</h3>
+              <p>NLP models and intelligence pipelines around technical content.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section section-stats" aria-labelledby="contrib-title">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="kicker">04 — Public signal</p>
+            <h2 id="contrib-title">GitHub, as a backstop.</h2>
+            <p>
+              Stars are not the job. Repos, languages, and consistency are a
+              useful check when most of the real work is behind a customer NDA.
+            </p>
+          </header>
+          <div class="stats-grid">
+            <img
+              src="https://github-readme-stats.vercel.app/api?username=dakshin-jv&show_icons=true&include_all_commits=true&count_private=true&title_color=c2410c&icon_color=c2410c&text_color=1c1612&bg_color=00000000&hide_border=true"
+              alt="GitHub stats for dakshin-jv"
+              width="460"
+              height="180"
+            />
+            <img
+              src="https://github-readme-stats.vercel.app/api/top-langs/?username=dakshin-jv&layout=compact&title_color=c2410c&text_color=1c1612&bg_color=00000000&hide_border=true&langs_count=6"
+              alt="Top languages for dakshin-jv"
+              width="300"
+              height="180"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-contact">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="kicker">05 — Contact</p>
+            <h2>If the work is the last mile, write.</h2>
+            <p>
+              Applied AI / FDE / AI engineer roles. Especially where someone
+              has to walk into an existing estate, find the bottleneck, and
+              leave a system the team will run.
+            </p>
+          </header>
+          <div class="contact-row">
+            <a class="contact-link" href="mailto:dakshinjv@icloud.com">
+              dakshinjv@icloud.com
+            </a>
+            <button class="btn btn-ghost" type="button" data-copy-email>
+              Copy email
+            </button>
+          </div>
+          <ul class="contact-list">
+            <li><a href="https://github.com/dakshin-jv" rel="noopener noreferrer">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/dakshinjv" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://github.com/dakshin-jv/dakshin">This repo</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>Dakshin J V · Applied AI Engineer</p>
+        <p class="fine">Chennai · Built as a brief, not a template.</p>
+      </div>
+    </footer>
+
+    <div class="toast" data-toast hidden role="status"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
