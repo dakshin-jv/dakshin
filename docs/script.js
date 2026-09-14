@@ -37,12 +37,18 @@ mobileNav?.querySelectorAll("a").forEach((link) => {
 });
 
 copyButton?.addEventListener("click", async () => {
+  const original = copyButton.textContent;
   try {
     await navigator.clipboard.writeText(email);
+    copyButton.textContent = "Copied";
     showToast("Email copied");
   } catch {
+    copyButton.textContent = "Copy failed";
     showToast(email);
   }
+  window.setTimeout(() => {
+    copyButton.textContent = original;
+  }, 2000);
 });
 
 function showToast(message) {
@@ -51,5 +57,5 @@ function showToast(message) {
   toast.hidden = false;
   window.setTimeout(() => {
     toast.hidden = true;
-  }, 1800);
+  }, 2200);
 }
