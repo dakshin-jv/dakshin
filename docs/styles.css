@@ -7,7 +7,7 @@
   --accent: #c2410c;
   --accent-deep: #9a3412;
   --chip: #efe6d8;
-  --header: rgba(243, 238, 228, 0.86);
+  --header: #f3eee4;
   --shadow: 0 24px 60px rgba(28, 22, 18, 0.08);
   --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
   --sans: "Instrument Sans", "Segoe UI", sans-serif;
@@ -23,7 +23,7 @@
   --accent: #ef6b3a;
   --accent-deep: #ff8a5b;
   --chip: #241f1b;
-  --header: rgba(20, 17, 15, 0.88);
+  --header: #14110f;
   --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
 }
 
@@ -37,7 +37,7 @@
     --accent: #ef6b3a;
     --accent-deep: #ff8a5b;
     --chip: #241f1b;
-    --header: rgba(20, 17, 15, 0.88);
+    --header: #14110f;
     --shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
   }
 }
@@ -102,7 +102,6 @@ a {
   position: sticky;
   top: 0;
   z-index: 10;
-  backdrop-filter: blur(16px);
   background: var(--header);
   border-bottom: 1px solid var(--rule);
 }
